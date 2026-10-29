@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>SIKA - Profil Mahasiswa</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>SIKA</h1>
+      <p>Sistem Informasi Akademik</p>
+    </div>
+  </header>
+
+  <nav aria-label="Navigasi utama">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="mahasiswa.html">Profil Mahasiswa</a></li>
+        <li><a href="form-mahasiswa.html">Form Mahasiswa</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>Profil Mahasiswa</h1>
+
+    <section class="profile">
+      <figure>
+        <img src="assets/images/mahasiswa.jpeg"
+             alt="Foto profil mahasiswa Haidir Sanjani">
+        <figcaption>Haidir Sanjani</figcaption>
+      </figure>
+      <div class="profile-info">
+        <h2>Identitas Mahasiswa</h2>
+        <p><strong>NIM:</strong> 22250013</p>
+        <p><strong>Nama:</strong> Haidir Sanjani</p>
+        <p><strong>Email:</strong> haidir@gmail.com</p>
+        <p><strong>Program Studi:</strong> Teknik Informatika</p>
+        <p><strong>Angkatan:</strong> 2025</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Informasi Akademik</h2>
+      <div class="table-wrapper">
+        <table>
+          <caption>Status Akademik Mahasiswa</caption>
+          <tbody>
+            <tr><th scope="row">Program Studi</th><td>Teknik Informatika</td></tr>
+            <tr><th scope="row">Angkatan</th><td>2025</td></tr>
+            <tr><th scope="row">Status</th><td>Aktif</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Bab 4: status + pencarian tabel (data dummy contoh) -->
+    <section>
+      <h2>Status Aplikasi</h2>
+      <p id="statusAplikasi" class="status">Siap digunakan</p>
+      <button type="button" id="btnCek">Cek Status</button>
+    </section>
+
+    <section>
+      <h2>Daftar Mahasiswa</h2>
+      <label for="cariMahasiswa">Cari Mahasiswa</label>
+      <input type="search" id="cariMahasiswa" placeholder="Cari NIM atau nama...">
+      <div class="table-wrapper">
+        <table id="tabelMahasiswa">
+          <caption>Ringkasan Data Mahasiswa</caption>
+          <thead>
+            <tr>
+              <th scope="col">NIM</th>
+              <th scope="col">Nama</th>
+              <th scope="col">Program Studi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>22250013</td><td>Haidir Sanjani</td><td>Teknik Informatika</td></tr>
+            <tr><td>24010002</td><td>Budi Santoso</td><td>Sistem Informasi</td></tr>
+            <tr><td>24010003</td><td>Citra Lestari</td><td>Teknik Informatika</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 SIKA</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
